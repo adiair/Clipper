@@ -181,9 +181,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.preview-card:hover {
-    transform: translateY(-5px);
-}
 
 .preview-title {
     font-size: 1.3rem;
