@@ -234,7 +234,7 @@ body {
 }
 
 .download-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
 }
 
@@ -256,7 +256,7 @@ body {
 }
 
 .reset-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
 }
 
