@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favicon" rel="icon" href="idd.png" type="image/x-icon" />
+    <title>Clipper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Clipper</h1>
+            <p>Compress your images while maintaining quality</p>
+        </div>
+
+        <div class="content">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📤</div>
+                <div class="upload-text">Drop your image here or click to browse</div>
+                <div class="upload-subtext">Supports JPEG, PNG, WebP formats</div>
+                <input type="file" class="file-input" id="fileInput" accept="image/*">
+            </div>
+
+            <div class="controls" id="controls">
+                <div class="control-group">
+                    <label class="control-label">
+                        Quality: <span class="value-display" id="qualityValue">80%</span>
+                    </label>
+                    <input type="range" class="slider" id="qualitySlider" min="10" max="100" value="80">
+                </div>
+            </div>
+
+            <div class="preview-section" id="previewSection">
+                <div class="preview-card">
+                    <div class="preview-title">Original Image</div>
+                    <img class="preview-img" id="originalImg" >
+                    <div class="file-info" id="originalInfo"></div>
+                </div>
+
+                <div class="preview-card">
+                    <div class="preview-title">Compressed Image</div>
+                    <img class="preview-img" id="compressedImg" >
+                    <div class="file-info" id="compressedInfo"></div>
+                    <button class="download-btn" id="downloadBtn">Download Compressed Image</button>
+                </div>
+            </div>
+
+            <button class="reset-btn" id="resetBtn" style="display: none;">Process Another Image</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
